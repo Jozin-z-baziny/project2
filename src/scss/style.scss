@@ -1,0 +1,42 @@
+@import "1_fonts.scss";
+@import "2_reset.scss";
+@import "3_utilits.scss";
+
+/*BEGIN STYLE.CSS*/
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: $fontfamily;
+   //font-weight: ;
+   //color: ;
+}
+
+.wrapper {
+   min-height: 100%;
+   max-width: $maw + px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   margin: 0px auto;
+}
+
+// HEADER
+
+@import "4_header.scss";
+
+// MAIN
+
+.main {
+   flex: 1 1 auto;
+}
+
+// FOOTER
+
+@import "5_footer.scss";
+
+@import "6_burger.scss";
+
+@import "7_responsive.scss";
